@@ -38,7 +38,7 @@ export default function Navbar() {
             </NavLink>
 
             {/* Navigation Links */}
-            <nav className="flex space-x-1 sm:space-x-2 overflow-x-auto pb-1 no-scrollbar w-full lg:w-auto">
+            <nav className="flex space-x-1 sm:space-x-2 overflow-x-auto pb-1 no-scrollbar flex-1 min-w-0 lg:justify-center mx-4">
               {navItems.map((item) => {
                 const Icon = item.icon;
                 return (
@@ -62,7 +62,7 @@ export default function Navbar() {
             </nav>
 
             {/* Upload Dataset Button & Active Dataset Badge */}
-            <div className="hidden lg:flex items-center space-x-3">
+            <div className="hidden lg:flex items-center space-x-3 flex-shrink-0">
               <div className="px-2.5 py-1 rounded-lg bg-slate-950 border border-slate-800 text-[11px] font-mono text-slate-400 flex items-center space-x-1.5">
                 <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
                 <span>{activeDatasetLabel}</span>
