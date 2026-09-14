@@ -10,7 +10,7 @@ export default function Navbar() {
   const navItems = [
     { to: '/', label: 'Overview', icon: Home },
     { to: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
-    { to: '/cases', label: 'Investigation Queue', icon: ShieldAlert },
+    { to: '/cases', label: 'Investigation', icon: ShieldAlert },
     { to: '/vendors', label: 'Vendor Directory', icon: Building2 },
     { to: '/settings', label: 'Model Calibration', icon: SlidersHorizontal },
   ];
