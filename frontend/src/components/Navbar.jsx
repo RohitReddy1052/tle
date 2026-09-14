@@ -19,10 +19,10 @@ export default function Navbar() {
     <>
       <header className="bg-slate-900/90 backdrop-blur-md border-b border-slate-800 sticky top-0 z-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex flex-col lg:flex-row lg:items-center justify-between py-3 lg:h-16 gap-3 lg:gap-0">
             
             {/* Logo & Platform Info */}
-            <NavLink to="/" className="flex items-center space-x-3 group">
+            <NavLink to="/" className="flex items-center space-x-3 group flex-shrink-0">
               <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-600 to-blue-800 flex items-center justify-center shadow-lg shadow-cyan-900/30 border border-cyan-400/20 group-hover:scale-105 transition">
                 <ShieldCheck className="w-6 h-6 text-cyan-200" />
               </div>
@@ -38,7 +38,7 @@ export default function Navbar() {
             </NavLink>
 
             {/* Navigation Links */}
-            <nav className="flex space-x-1 sm:space-x-2">
+            <nav className="flex space-x-1 sm:space-x-2 overflow-x-auto pb-1 no-scrollbar w-full lg:w-auto">
               {navItems.map((item) => {
                 const Icon = item.icon;
                 return (
@@ -47,14 +47,14 @@ export default function Navbar() {
                     to={item.to}
                     end={item.to === '/'}
                     className={({ isActive }) =>
-                      `flex items-center space-x-2 px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                      `flex items-center space-x-2 px-3 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap ${
                         isActive
                           ? 'bg-slate-800 text-cyan-400 border border-slate-700/80 shadow-sm'
                           : 'text-slate-300 hover:bg-slate-800/60 hover:text-white'
                       }`
                     }
                   >
-                    <Icon className="w-4 h-4" />
+                    <Icon className="w-4 h-4 flex-shrink-0" />
                     <span>{item.label}</span>
                   </NavLink>
                 );
