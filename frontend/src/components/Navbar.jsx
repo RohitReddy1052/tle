@@ -38,7 +38,7 @@ export default function Navbar() {
             </NavLink>
 
             {/* Navigation Links */}
-            <nav className="flex space-x-1 sm:space-x-2 overflow-x-auto pb-1 no-scrollbar flex-1 min-w-0 lg:justify-center mx-4">
+            <nav className="flex space-x-1 sm:space-x-2 overflow-x-auto pb-1 no-scrollbar flex-1 min-w-0 mx-4">
               {navItems.map((item) => {
                 const Icon = item.icon;
                 return (
