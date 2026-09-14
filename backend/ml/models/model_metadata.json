@@ -1,0 +1,61 @@
+{
+  "status": "trained",
+  "samplesCount": 3500,
+  "anomalyRatio": 0.19885714285714284,
+  "metrics": {
+    "accuracy": 0.9634,
+    "precision": 0.9494,
+    "recall": 0.8621,
+    "f1Score": 0.9036,
+    "rocAucScore": 0.9314
+  },
+  "modelsTrained": [
+    "RandomForestClassifier",
+    "IsolationForest",
+    "LocalOutlierFactor"
+  ],
+  "featureImportances": [
+    {
+      "feature": "rotation_index",
+      "importance": 0.217
+    },
+    {
+      "feature": "relationship_density",
+      "importance": 0.2076
+    },
+    {
+      "feature": "vendor_sole_bid_rate",
+      "importance": 0.192
+    },
+    {
+      "feature": "bid_spread_variance",
+      "importance": 0.1321
+    },
+    {
+      "feature": "ratio_to_estimate",
+      "importance": 0.1286
+    },
+    {
+      "feature": "win_rate_share",
+      "importance": 0.0851
+    },
+    {
+      "feature": "price_z_score",
+      "importance": 0.0359
+    },
+    {
+      "feature": "single_bidder_flag",
+      "importance": 0.0017
+    }
+  ],
+  "featuresList": [
+    "price_z_score",
+    "ratio_to_estimate",
+    "bid_spread_variance",
+    "single_bidder_flag",
+    "vendor_sole_bid_rate",
+    "win_rate_share",
+    "rotation_index",
+    "relationship_density"
+  ]
+}
